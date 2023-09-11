@@ -1,17 +1,48 @@
+/* Estilos para o cabeçalho (header) */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu {
+  background-color: #333;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #1c1c1c;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto;
 }
 
 .nome {
@@ -23,12 +54,13 @@ body {
 .profissao {
   font-size: 24px;
   color: #fff;
-  margin-bottom: 30px; /* Espaço maior entre o nome e a profissão */
+  margin-bottom: 30px;
 }
 
 .redes-sociais {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .redes-sociais a {
@@ -45,4 +77,42 @@ body {
 
 .redes-sociais svg:hover {
   transform: scale(1.2);
+}
+
+/* Regra de mídia para telas menores que 768px */
+@media (max-width: 768px) {
+  .menu ul li {
+    margin-right: 10px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .nome {
+    font-size: 36px;
+  }
+
+  .profissao {
+    font-size: 18px;
+  }
+}
+
+/* Regra de mídia para telas menores que 480px */
+@media (max-width: 480px) {
+  .menu ul li {
+    margin-right: 5px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .nome {
+    font-size: 24px;
+  }
+
+  .profissao {
+    font-size: 16px;
+  }
 }
