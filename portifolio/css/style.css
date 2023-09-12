@@ -1,4 +1,3 @@
-/* Estilos para o cabeçalho (header) */
 header {
   background-color: #333;
   color: #fff;
@@ -37,10 +36,9 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Definir altura mínima como 100% da altura da janela (viewport height) */
+  height: 100vh;
 }
 
-/* Estilos para a div externa que agrupa os containers */
 .outer-container {
   display: flex;
   justify-content: center;
@@ -48,15 +46,13 @@ body {
   height: 100vh;
 }
 
-/* Estilos para o container principal */
 .container {
   align-items: center;
   text-align: center;
 }
 
-/* Estilos para a imagem SVG dentro da div */
 .computer_graphic {
-  margin-left: 150px; /* Ajuste a margem esquerda conforme necessário */
+  margin-left: 150px;
 }
 
 .computer_graphic img {
@@ -66,7 +62,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Estilos para a imagem SVG quando passar o mouse por cima */
 .computer_graphic img:hover {
   transform: scale(1.2);
 }
@@ -106,7 +101,6 @@ body {
   transform: scale(1.2);
 }
 
-/* Regra de mídia para telas menores que 768px */
 @media (max-width: 768px) {
   .menu ul li {
     margin-right: 10px;
@@ -125,7 +119,6 @@ body {
   }
 }
 
-/* Regra de mídia para telas menores que 480px */
 @media (max-width: 480px) {
   .menu ul li {
     margin-right: 5px;
@@ -144,65 +137,59 @@ body {
   }
 
   .computer_graphic {
-    display: none; /* Oculta a div quando a tela for menor que 480px */
+    display: none;
   }
 }
 
-/* Estilos para o rodapé */
 footer {
-  background-color: #333; /* Cor de fundo do rodapé */
-  color: #fff; /* Cor do texto no rodapé */
-  text-align: center; /* Alinhar o texto no centro do rodapé */
-  font-size: 12px; /* Tamanho da fonte para o rodapé */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
 }
 
 .header-content {
   display: flex;
-  justify-content: center; /* Centralize horizontalmente */
-  align-items: center; /* Centralize verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
-/* Estilos para o título da página "Sobre Mim" */
 .page-title {
   font-size: 24px;
   color: #fff;
-  margin-right: 100px; /* Espaçamento à direita do título */
+  margin-right: 100px;
 }
 
-/* Estilos para o container principal */
 #sobre-mim {
   display: flex;
-  justify-content: center; /* Centraliza os elementos horizontalmente */
-  align-items: center; /* Centraliza os elementos verticalmente */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 10% 10%;
   flex-wrap: wrap;
   gap: 10%;
 }
 
-/* Estilos para a seção de "Quem sou eu" */
 .sobre-mim {
-  flex: 1; /* Permite que a seção ocupe o espaço disponível e cresça conforme necessário */
-  text-align: center; /* Alinha o texto à esquerda */
+  flex: 1;
+  text-align: center;
 }
 
-/* Estilos para o título da página "Sobre Mim" */
 .page-title {
   font-size: 24px;
   color: #fff;
 }
 
-/* Estilos para a seção de idiomas */
 .idiomas {
   display: flex;
-  flex-direction: column; /* Empilhar elementos verticalmente */
-  align-items: center; /* Centralizar horizontalmente */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .idiomas .titulo {
   display: flex;
-  align-items: center; /* Centralizar horizontalmente */
+  align-items: center;
 }
 
 .idiomas .titulo h2 {
@@ -211,17 +198,16 @@ footer {
 }
 
 .idiomas svg {
-  width: 1em; /* Tamanho do ícone de idiomas */
+  width: 1em;
   height: 1em;
-  fill: #fff; /* Cor do ícone */
+  fill: #fff;
 }
 
 .idiomas p {
-  font-size: 16px; /* Tamanho de fonte para os idiomas e níveis */
-  color: #fff; /* Cor de texto para os idiomas e níveis */
+  font-size: 16px;
+  color: #fff;
 }
 
-/* Esconda o menu normal em telas pequenas (menos de 768px) */
 @media (max-width: 768px) {
   #menu ul {
     display: none;
@@ -231,7 +217,6 @@ footer {
     display: block;
   }
   
-  /* Mostrar o menu hamburguer */
   #menu.open ul {
     list-style: none;
     padding: 0;
@@ -258,7 +243,6 @@ footer {
   }
 }
 
-/* Estilos para o menu normal em telas maiores */
 @media (min-width: 769px) {
   .menu-icon {
     display: none;
@@ -266,26 +250,25 @@ footer {
 }
 
 .menu-icon {
-  cursor: pointer; /* Mude o cursor para uma mão ao passar o mouse sobre o botão */
-  padding: 10px; /* Adicione algum espaço ao redor do botão para facilitar o clique */
-  position: relative; /* Defina a posição como relativa para posicionamento dos elementos internos */
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
 }
 
 .menu-icon div {
-  width: 30px; /* Largura das linhas do botão hamburguer */
-  height: 3px; /* Altura das linhas do botão hamburguer */
-  background-color: #fff; /* Cor das linhas do botão hamburguer */
-  margin: 6px 0; /* Espaçamento vertical entre as linhas */
-  transition: transform 0.3s ease; /* Adicione uma transição para suavizar a animação */
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: transform 0.3s ease;
 }
 
-/* Estilos para a animação do botão hamburguer quando estiver aberto */
 .menu.open .menu-icon div:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .menu.open .menu-icon div:nth-child(2) {
-  opacity: 0; /* Ocultar a segunda linha quando o menu estiver aberto */
+  opacity: 0;
 }
 
 .menu.open .menu-icon div:nth-child(3) {
