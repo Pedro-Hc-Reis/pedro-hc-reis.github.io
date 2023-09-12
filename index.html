@@ -10,12 +10,19 @@
 </head>
 
 <body>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+    <div class="loader">
+      <span class="carregando"></span>
+      <span class="title">Carregando...</span>
+    </div>
+  </div>
   <header>
     <nav class="menu">
       <ul>
         <li><a href="sobre.html">Sobre Mim</a></li>
         <li><a href="experiencias/experiencias.html">Experiências</a></li>
-        <li><a href="fformacoes.html">Formações</a></li>
+        <li><a href="formacoes/formacoes.html">Formações</a></li>
       </ul>
     </nav>
   </header>
@@ -58,6 +65,34 @@
   <footer>
     <p>© copyright 2023 - Pedro Reis</p>
   </footer>
+
+  <script>
+    // Verifica se o preloader já foi exibido antes
+    const isFirstVisit = localStorage.getItem('isFirstVisit') === null;
+
+    // Se for a primeira visita, mostra o preloader
+    if (isFirstVisit) {
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'block';
+
+      // Define um valor no localStorage para indicar que a página foi visitada
+      localStorage.setItem('isFirstVisit', 'false');
+      
+    // Remove o preloader após o carregamento completo da página com um pequeno atraso
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+      }, 1000); // Aguarda 1 segundo antes de remover o preloader
+    });
+    }
+    else{
+      const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    }
+
+  </script>
+
 </body>
 
 </html>
