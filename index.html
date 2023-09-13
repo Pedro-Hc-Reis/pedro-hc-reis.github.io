@@ -68,7 +68,7 @@
 
   <script>
     // Verifica se o preloader já foi exibido antes
-    const isFirstVisit = localStorage.getItem('isFirstVisit') === null;
+    const isFirstVisit = sessionStorage.getItem('isFirstVisit') === null;
 
     // Se for a primeira visita, mostra o preloader
     if (isFirstVisit) {
@@ -76,7 +76,7 @@
       preloader.style.display = 'block';
 
       // Define um valor no localStorage para indicar que a página foi visitada
-      localStorage.setItem('isFirstVisit', 'false');
+      sessionStorage.setItem('isFirstVisit', 'false');
       
     // Remove o preloader após o carregamento completo da página com um pequeno atraso
     window.addEventListener('load', function () {
