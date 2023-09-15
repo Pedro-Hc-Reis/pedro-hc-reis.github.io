@@ -88,10 +88,56 @@ div#preloader {
   height: calc(100vh - 7.5vh);
 }
 
-#computer_graphic{
-  height: auto;
-  width: auto;
+#computer_graphic {
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
 }
+
+#computer_graphic:hover {
+  transform: rotate(10deg); /* Rotaciona a imagem quando o mouse passa por cima */
+}
+
+/* Estilos para a animação parallax */
+.parallax {
+  transform: translateY(0); /* Inicialmente, sem deslocamento vertical */
+  transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/* Quando a página é rolada, a imagem se move verticalmente */
+.parallax.active {
+  transform: translateY(50px); /* Ajuste o valor conforme necessário */
+}
+
+/* Estilos para a animação de parallax em toda a página */
+#parallax-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('sua-imagem-de-fundo.jpg'); /* Substitua com sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transform: translate3d(0, 0, 0); /* Inicialmente, sem deslocamento */
+  transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/* Quando a página é rolada, o fundo se move verticalmente */
+body.parallax-active #parallax-background {
+  transform: translate3d(0, -50%, 0); /* Ajuste o valor conforme necessário */
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   #computer_graphic {

@@ -21,3 +21,30 @@ else {
   const preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
 }
+
+// Seu código JavaScript para ativar a animação parallax
+window.addEventListener("scroll", function() {
+  const computerGraphic = document.getElementById("computer_graphic");
+  const scrollY = window.scrollY;
+
+  if (scrollY > 100) { // Ajuste o valor conforme necessário
+    computerGraphic.classList.add("active");
+  } else {
+    computerGraphic.classList.remove("active");
+  }
+});
+
+
+// Seu código JavaScript para ativar a animação de parallax em toda a página
+window.addEventListener("scroll", function() {
+  const scrollY = window.scrollY;
+  const body = document.body;
+
+  if (scrollY > 100) { // Ajuste o valor conforme necessário
+    body.classList.add("parallax-active");
+  } else {
+    body.classList.remove("parallax-active");
+  }
+});
+
+
