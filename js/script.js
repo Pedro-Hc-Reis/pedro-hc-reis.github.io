@@ -23,7 +23,7 @@ else {
 }
 
 // Seu código JavaScript para ativar a animação parallax
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const computerGraphic = document.getElementById("computer_graphic");
   const scrollY = window.scrollY;
 
@@ -36,7 +36,7 @@ window.addEventListener("scroll", function() {
 
 
 // Seu código JavaScript para ativar a animação de parallax em toda a página
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const scrollY = window.scrollY;
   const body = document.body;
 
@@ -47,4 +47,14 @@ window.addEventListener("scroll", function() {
   }
 });
 
-
+const toggleTemaButton = document.getElementById("theme-toggle");
+toggleTemaButton.addEventListener("click", function() {
+  const rootElement = document.documentElement;
+  if (rootElement.classList.contains("tema-claro")) {
+    rootElement.classList.remove("tema-claro");
+    rootElement.classList.add("tema-escuro");
+  } else {
+    rootElement.classList.remove("tema-escuro");
+    rootElement.classList.add("tema-claro");
+  }
+});
