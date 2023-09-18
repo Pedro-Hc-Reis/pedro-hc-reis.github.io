@@ -1,17 +1,16 @@
 function preloader() {
+  const preloader = document.getElementById('preloader');
+
   if (isFirstVisit) {
     preloader.style.display = 'block';
-
     sessionStorage.setItem('isFirstVisit', 'false');
-
+    
     window.addEventListener('load', function () {
       setTimeout(function () {
         preloader.style.display = 'none';
       }, 1000); // Aguarda 1 segundo antes de remover o preloader
     });
-  }
-  else {
-    const preloader = document.getElementById('preloader');
+  } else {
     preloader.style.display = 'none';
   }
 }
