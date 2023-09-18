@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const toggleTemaButton = document.getElementById("theme-toggle");
+/* const toggleTemaButton = document.getElementById("theme-toggle");
 toggleTemaButton.addEventListener("click", function() {
   const rootElement = document.documentElement;
   if (rootElement.classList.contains("tema-claro")) {
@@ -57,4 +57,31 @@ toggleTemaButton.addEventListener("click", function() {
     rootElement.classList.remove("tema-escuro");
     rootElement.classList.add("tema-claro");
   }
-});
+}); */
+
+function myFunction() {
+  $("#body-pd").toggleClass("bg-dark");
+  $("#c-card").toggleClass("bg-dark");
+  $("#c-card").toggleClass("text-light");
+  $("#btn-p").toggleClass("btn-light");
+  $("#svg-p").toggleClass("text-dark");
+}
+
+function myFunction() {
+  // Verifica o estado atual do tema
+  var isDarkTheme = $("#body-pd").hasClass("bg-dark");
+
+  if (isDarkTheme) {
+      // Se for tema escuro, mude para tema claro
+      $("#body-pd").removeClass("bg-dark").addClass("bg-light");
+      $(".c-card").removeClass("text-light").addClass("text-dark");
+      $(".btn-p").removeClass("btn-light").addClass("btn-dark");
+      $(".svg-p").removeClass("text-dark").addClass("text-light");
+  } else {
+      // Se for tema claro, mude para tema escuro
+      $("#body-pd").removeClass("bg-light").addClass("bg-dark");  
+      $(".c-card").removeClass("text-dark").addClass("text-light");
+      $(".btn-p").removeClass("btn-dark").addClass("btn-light");
+      $(".svg-p").removeClass("text-light").addClass("text-dark");
+  }
+}
