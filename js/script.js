@@ -1,5 +1,3 @@
-const isFirstVisit = sessionStorage.getItem('isFirstVisit') === null;
-
 if (isFirstVisit) {
   const preloader = document.getElementById('preloader');
   preloader.style.display = 'block';
