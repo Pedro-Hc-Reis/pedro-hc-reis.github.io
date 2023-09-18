@@ -1,6 +1,27 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 :root {
 
-  --cor-amarelo: #ffef00;
+  --cor-azul: #0022ff;
   --cor-preto: #000000;
   --cor-gelo: #f4f4f4;
 
@@ -20,7 +41,7 @@ div#preloader {
 
 .loader .title {
 
-  color: var(--cor-amarelo);
+  color: var(--cor-azul);
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: lighter;
@@ -48,7 +69,7 @@ div#preloader {
   display: block;
   margin-bottom: 10%;
   margin-left: 18%;
-  border-top: 3px solid var(--cor-amarelo);
+  border-top: 3px solid var(--cor-azul);
   border-right: 3px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
@@ -63,279 +84,83 @@ div#preloader {
   }
 } 
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+.altura{
+  min-height: 100vh;
 }
 
-.menu {
-  background-color: #333;
-  text-align: center;
-  vertical-align: middle; 
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.menu ul li {
-  display: inline;
-  margin-right: 40px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #1c1c1c;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.outer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  align-items: center;
-  text-align: center;
-}
-
-.computer_graphic {
-  margin-left: 150px;
-}
-
-.computer_graphic img {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
-  transition: transform 0.3s ease;
-}
-
-.computer_graphic img:hover {
-  transform: scale(1.2);
-}
-
-
-.nome {
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.profissao {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 30px;
-}
-
-.redes-sociais {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.redes-sociais a {
-  text-decoration: none;
-  margin: 0 20px;
-}
-
-.redes-sociais svg {
-  width: 40px;
-  height: 40px;
-  fill: #fff;
-  transition: transform 0.3s ease;
-}
-
-.redes-sociais svg:hover {
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .menu ul li {
-    margin-right: 10px;
-  }
-
-  .menu a {
-    font-size: 16px;
-  }
-
-  .nome {
-    font-size: 36px;
-  }
-
-  .profissao {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu ul li {
-    margin-right: 5px;
-  }
-
-  .menu a {
-    font-size: 14px;
-  }
-
-  .nome {
-    font-size: 24px;
-  }
-
-  .profissao {
-    font-size: 16px;
-  }
-
-  .computer_graphic {
-    display: none;
-  }
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-}
-
-.header-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-title {
-  font-size: 24px;
-  color: #fff;
-  margin-right: 100px;
-}
-
-#sobre-mim {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10% 10%;
-  flex-wrap: wrap;
-  gap: 10%;
-}
-
-.sobre-mim {
-  flex: 1;
-  text-align: center;
-}
-
-.page-title {
-  font-size: 24px;
-  color: #fff;
-}
-
-.idiomas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.idiomas .titulo {
-  display: flex;
-  align-items: center;
-}
-
-.idiomas .titulo h2 {
-  font-size: 24px;
-  color: #fff;
-}
-
-.idiomas svg {
-  width: 1em;
-  height: 1em;
-  fill: #fff;
-}
-
-.idiomas p {
-  font-size: 16px;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  #menu ul {
-    display: none;
-  }
-
-  .menu-icon{
-    display: block;
-  }
-  
-  #menu.open ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    z-index: 1;
-    display: block;
-  }
-
-  #menu.open ul li {
-    display: block;
-    margin: 0;
-    padding: 15px 0;
-  }
-
-  #menu.open ul li a {
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-  }
-}
-
-@media (min-width: 769px) {
-  .menu-icon {
-    display: none;
-  }
-}
-
-.menu-icon {
-  cursor: pointer;
-  padding: 10px;
+#computer_graphic {
   position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.menu-icon div {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: transform 0.3s ease;
+#computer_graphic img {
+  max-width: 100%;
+  height: auto;
 }
 
-.menu.open .menu-icon div:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+#computer_graphic:hover {
+  opacity: 0.5;
 }
 
-.menu.open .menu-icon div:nth-child(2) {
-  opacity: 0;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.menu.open .menu-icon div:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+@media screen and (max-width: 768px) {
+  #computer_graphic {
+    max-height: 40vh;
+  }
+}
+
+#translate{
+  color: #ffff;
+}
+
+#pa1{
+  height: 10vh;
+  width: 15vh;
+  background-color: #ffff;
+}
+.slider{
+  width: 100vh;
+}
+
+/* Defina as classes para o tema claro */
+.slider.theme-light {
+  background-color: #ffffff; /* Fundo branco */
+  color: #000000; /* Texto preto */
+
+  /* Estilos para os pontos (indicadores) no tema claro */
+  .slick-dots li button {
+    color: #000000; /* Cor dos pontos no tema claro */
+  }
+
+  /* Estilos para as setas de navegação no tema claro */
+  .slick-prev,
+  .slick-next {
+    color: #ffffff; /* Cor do ícone das setas no tema claro */
+  }
+}
+
+/* Defina as classes para o tema escuro */
+.slider.theme-dark {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
+
+  /* Estilos para os pontos (indicadores) no tema escuro */
+  .slick-dots li button {
+    color: #ffffff; /* Cor dos pontos no tema escuro */
+  }
+
+  /* Estilos para as setas de navegação no tema escuro */
+  .slick-prev,
+  .slick-next {
+    color: #000000; /* Cor do ícone das setas no tema escuro */
+  }
 }
