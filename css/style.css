@@ -85,7 +85,7 @@ div#preloader {
 } 
 
 .altura{
-  height: calc(100vh - 7.5vh);
+  min-height: 100vh;
 }
 
 #computer_graphic {
@@ -126,4 +126,41 @@ div#preloader {
   height: 10vh;
   width: 15vh;
   background-color: #ffff;
+}
+.slider{
+  width: 100vh;
+}
+
+/* Defina as classes para o tema claro */
+.slider.theme-light {
+  background-color: #ffffff; /* Fundo branco */
+  color: #000000; /* Texto preto */
+
+  /* Estilos para os pontos (indicadores) no tema claro */
+  .slick-dots li button {
+    color: #000000; /* Cor dos pontos no tema claro */
+  }
+
+  /* Estilos para as setas de navegação no tema claro */
+  .slick-prev,
+  .slick-next {
+    color: #ffffff; /* Cor do ícone das setas no tema claro */
+  }
+}
+
+/* Defina as classes para o tema escuro */
+.slider.theme-dark {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
+
+  /* Estilos para os pontos (indicadores) no tema escuro */
+  .slick-dots li button {
+    color: #ffffff; /* Cor dos pontos no tema escuro */
+  }
+
+  /* Estilos para as setas de navegação no tema escuro */
+  .slick-prev,
+  .slick-next {
+    color: #000000; /* Cor do ícone das setas no tema escuro */
+  }
 }
