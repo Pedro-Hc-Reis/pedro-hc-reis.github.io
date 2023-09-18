@@ -1,19 +1,19 @@
-if (isFirstVisit) {
-  const preloader = document.getElementById('preloader');
-  preloader.style.display = 'block';
+function preloader() {
+  if (isFirstVisit) {
+    preloader.style.display = 'block';
 
-  sessionStorage.setItem('isFirstVisit', 'false');
+    sessionStorage.setItem('isFirstVisit', 'false');
 
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-    }, 1000); // Aguarda 1 segundo antes de remover o preloader
-  });
-}
-else {
-  const preloader = document.getElementById('preloader');
-  preloader.style.display = 'none';
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, 1000); // Aguarda 1 segundo antes de remover o preloader
+    });
+  }
+  else {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  }
 }
 
 function myFunction() {
