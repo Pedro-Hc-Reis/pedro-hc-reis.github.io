@@ -39,7 +39,7 @@ Ficarei feliz em me conectar com você! Você pode entrar em contato comigo por 
 
 - E-mail: [pedroreis0503@gmail.com](mailto:pedroreis0503@gmail.com)
 - LinkedIn: [Pedro Reis](https://www.linkedin.com/in/pedro-h-c-reis)
-- GitHub: [Pedro-Hc-Reis]([https://github.com/seu-nome](https://github.com/Pedro-Hc-Reis)
+- GitHub: [Pedro-Hc-Reis](https://github.com/Pedro-Hc-Reis)
 
 ## Contribuições
 
