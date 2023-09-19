@@ -1,9 +1,9 @@
 function preloader() {
   const preloader = document.getElementById('preloader');
 
-  if (isFirstVisit) {
+  if (localStorage.getItem('isFirstVisit') === null) {
     preloader.style.display = 'block';
-    sessionStorage.setItem('isFirstVisit', 'false');
+    localStorage.setItem('isFirstVisit', 'false');
     
     window.addEventListener('load', function () {
       setTimeout(function () {
