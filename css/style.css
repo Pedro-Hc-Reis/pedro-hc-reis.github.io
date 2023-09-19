@@ -55,8 +55,8 @@ div#preloader {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top:-50px; 
-  margin-left:-50px;
+  margin-top: -50px;
+  margin-left: -50px;
 
 }
 
@@ -79,12 +79,13 @@ div#preloader {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
-.altura{
+.altura {
   min-height: 100vh;
 }
 
@@ -107,6 +108,7 @@ div#preloader {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -118,49 +120,47 @@ div#preloader {
   }
 }
 
-#translate{
+#translate {
   color: #ffff;
 }
 
-#pa1{
+#pa1 {
   height: 10vh;
   width: 15vh;
   background-color: #ffff;
 }
-.slider{
-  width: 100vh;
+
+.slider {
+  width: auto;
 }
 
 /* Defina as classes para o tema claro */
 .slider.theme-light {
-  background-color: #ffffff; /* Fundo branco */
-  color: #000000; /* Texto preto */
+  color: var(--cor-preto);
+  /* Texto preto */
 
   /* Estilos para os pontos (indicadores) no tema claro */
-  .slick-dots li button {
-    color: #000000; /* Cor dos pontos no tema claro */
+  .slick-dots li.slick-active button:before {
+    color: var(--cor-preto);
+    /* Cor dos pontos no tema claro */
   }
 
-  /* Estilos para as setas de navegação no tema claro */
-  .slick-prev,
-  .slick-next {
-    color: #ffffff; /* Cor do ícone das setas no tema claro */
+  .slick-dots li button:before {
+    color: var(--cor-preto);
   }
 }
 
 /* Defina as classes para o tema escuro */
 .slider.theme-dark {
-  background-color: #000000; /* Fundo preto */
-  color: #ffffff; /* Texto branco */
+  color: var(--cor-gelo);
+  /* Texto branco */
 
   /* Estilos para os pontos (indicadores) no tema escuro */
-  .slick-dots li button {
-    color: #ffffff; /* Cor dos pontos no tema escuro */
+  .slick-dots li.slick-active button:before {
+    color: var(--cor-gelo);
   }
 
-  /* Estilos para as setas de navegação no tema escuro */
-  .slick-prev,
-  .slick-next {
-    color: #000000; /* Cor do ícone das setas no tema escuro */
+  .slick-dots li button:before {
+    color: var(--cor-gelo);
   }
 }

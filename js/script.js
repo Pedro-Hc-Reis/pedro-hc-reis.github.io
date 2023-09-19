@@ -24,19 +24,20 @@ function myFunction() {
     $(".btn-p").removeClass("btn-light").addClass("btn-dark");
     $(".svg-p").removeClass("text-dark").addClass("text-light");
     $("#icon-theme").removeClass("bxs-moon").addClass("bxs-sun");
-    $('.slider').removeClass('theme-light').addClass('theme-dark');
+    $('.slider').removeClass('theme-dark').addClass('theme-light');
   } else {
     $("#body-pd").removeClass("bg-light").addClass("bg-dark");
     $(".c-card").removeClass("text-dark").addClass("text-light");
     $(".btn-p").removeClass("btn-dark").addClass("btn-light");
     $(".svg-p").removeClass("text-light").addClass("text-dark");
     $("#icon-theme").removeClass("bxs-sun").addClass("bxs-moon");
-    $('.slider').removeClass('theme-dark').addClass('theme-light');
+    $('.slider').removeClass('theme-light').addClass('theme-dark');
   }
 }
 
 $(document).ready(function(){
   $('.slider').slick({
-      dots: true
+      dots: true, // Mostrar os pontos de navegação (bolas)
+      arrows: false, // Ocultar as setas de navegação
   });
 });
