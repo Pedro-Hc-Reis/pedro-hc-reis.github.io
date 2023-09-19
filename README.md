@@ -37,9 +37,9 @@ Destaco alguns dos projetos em que trabalhei ou estou trabalhando. Você encontr
 
 Ficarei feliz em me conectar com você! Você pode entrar em contato comigo por e-mail ou pelas redes sociais. Aqui estão algumas maneiras de me encontrar:
 
-- E-mail: [seu_email@example.com](mailto:pedroreis0503@gmail.com)
-- LinkedIn: [Seu Perfil do LinkedIn]([https://www.linkedin.com/in/seu-nome/](https://www.linkedin.com/in/pedro-h-c-reis)
-- GitHub: [Seu Perfil do GitHub]([https://github.com/seu-nome](https://github.com/Pedro-Hc-Reis)
+- E-mail: [pedroreis0503@gmail.com](mailto:pedroreis0503@gmail.com)
+- LinkedIn: [Pedro Reis](https://www.linkedin.com/in/pedro-h-c-reis)
+- GitHub: [Pedro-Hc-Reis]([https://github.com/seu-nome](https://github.com/Pedro-Hc-Reis)
 
 ## Contribuições
 
