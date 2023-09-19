@@ -35,9 +35,24 @@ function myFunction() {
   }
 }
 
-$(document).ready(function(){
-  $('.slider').slick({
-      dots: true, // Mostrar os pontos de navegação (bolas)
-      arrows: false, // Ocultar as setas de navegação
+$(document).ready(function () {
+  var $slider = $('.slider').slick({
+      dots: true,
+      arrows: false
+  });
+
+  var reversed = false;
+
+  $('.js-filter').on('click', function () {
+      $slider.slick('slickUnfilter');
+      if (reversed === false) {
+          $slider.slick('slickAdd', $slider.slick('getSlick').$slides.get().reverse());
+          reversed = true;
+          $(this).text('Reverter Filtro');
+      } else {
+          $slider.slick('slickAdd', $slider.slick('getSlick').$slides.get().reverse());
+          reversed = false;
+          $(this).text('Aplicar Filtro');
+      }
   });
 });

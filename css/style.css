@@ -89,6 +89,11 @@ div#preloader {
   min-height: 100vh;
 }
 
+#inicio {
+  max-height: 100vh;
+  height: calc(100vh - 7.5vh);
+}
+
 #computer_graphic {
   position: relative;
   cursor: pointer;
@@ -132,17 +137,13 @@ div#preloader {
 
 .slider {
   width: auto;
+  min-height: 20vh;
 }
 
-/* Defina as classes para o tema claro */
 .slider.theme-light {
   color: var(--cor-preto);
-  /* Texto preto */
-
-  /* Estilos para os pontos (indicadores) no tema claro */
   .slick-dots li.slick-active button:before {
     color: var(--cor-preto);
-    /* Cor dos pontos no tema claro */
   }
 
   .slick-dots li button:before {
@@ -150,12 +151,8 @@ div#preloader {
   }
 }
 
-/* Defina as classes para o tema escuro */
 .slider.theme-dark {
   color: var(--cor-gelo);
-  /* Texto branco */
-
-  /* Estilos para os pontos (indicadores) no tema escuro */
   .slick-dots li.slick-active button:before {
     color: var(--cor-gelo);
   }
