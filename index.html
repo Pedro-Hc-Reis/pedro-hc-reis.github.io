@@ -4,25 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Inclua os estilos CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sidebar.css">
 
-  <title>Portfólio</title>
-
+  <!-- Configuração de favicon -->
   <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="/images/favicon-64.png" sizes="64x64" type="image/png">
   <link rel="icon" href="/images/favicon-16.png" sizes="16x16" type="image/png">
+
+  <title>Portfólio</title>
 </head>
 
 <body id="body-pd" class="bg-dark">
+  
   <div id="preloader">
     <div id="status">&nbsp;</div>
     <div class="loader">
@@ -30,6 +31,8 @@
       <span class="title">Carregando...</span>
     </div>
   </div>
+
+
   <header class="header" id="header">
     <div class="header_toggle">
       <i class='bx bx-menu' id="menu-icon"></i>
@@ -121,7 +124,7 @@
                 </div>
                 <div class="col">
                   <button type="button" class="btn-p btn btn-light">
-                    <a href="mailto:pedrohenriquecreis@gmail.com" target="_blank">
+                    <a href="mailto:pedroreis0503@gmail.com" target="_blank">
                       <svg class="svg-p text-dark" xmlns="http://www.w3.org/2000/svg" width="30" height="35"
                         fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
                         <path
@@ -4930,7 +4933,7 @@
                   <p>Souzas, Campinas / SP</p>
                 </div>
                 <div class="col-sm-5">
-                  <h4 class="pb-3 text-center">Estagiário de suporte de informática</h4>
+                  <h4 class="pb-3  text-center">Estagiário de suporte de informática</h4>
                   <p>- Acompanhar os treinamentos aos usuários;</p>
                   <p>- Acompanhamento supervisionado no auxilio no suporte a usuários sobre a utilização de softwares;</p>
                   <p>- Acompanhamento supervisionado na orientação de clientes ou usuários em programas de treinamentos;</p>
@@ -4941,15 +4944,15 @@
             </div>
           </div>
           <div id="slide-2" data-start-date="2023-01">
-            <div class="c-card container-lg overflow-hidden text-center text-light">
+            <div class="c-card container-lg overflow-hidden text-light">
               <div class="row justify-content-center">
                 <div class="col-sm-5">
-                  <h4 class="pb-3">Agrosoftware</h4>
+                  <h4 class="pb-3  text-center">Agrosoftware</h4>
                   <p>Junho de 2023 - Atualmente ( 9 meses )</p>
                   <p>Souzas, Campinas / SP</p>
                 </div>
                 <div class="col-sm-5">
-                  <h4 class="pb-3">Analista de Desenvolvimento de Sistemas</h4>
+                  <h4 class="pb-3 text-center">Analista de Desenvolvimento de Sistemas</h4>
                   <p>- Acompanhar os treinamentos aos usuários;</p>
                 </div>
               </div>
@@ -4971,44 +4974,25 @@
   </footer>
   </div>
 
-  <script>
-    // Verifica se o preloader já foi exibido antes
-    const isFirstVisit = sessionStorage.getItem('isFirstVisit') === null;
-
-    // Se for a primeira visita, mostra o preloader
-    if (isFirstVisit) {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'block';
-
-      // Define um valor no localStorage para indicar que a página foi visitada
-      sessionStorage.setItem('isFirstVisit', 'false');
-
-      // Remove o preloader após o carregamento completo da página com um pequeno atraso
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          const preloader = document.getElementById('preloader');
-          preloader.style.display = 'none';
-        }, 1000); // Aguarda 1 segundo antes de remover o preloader
-      });
-    }
-    else {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-    }
-
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <!-- Inclua os scripts JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Scripts personalizados -->
   <script src="js/script.js"></script>
   <script src="js/sidebar.js"></script>
+
 </body>
 
 </html>
