@@ -1,20 +1,3 @@
-function preloader() {
-  const preloader = document.getElementById('preloader');
-
-  if (sessionStorage.getItem('isFirstVisit') === null) {
-    preloader.style.display = 'block';
-    localStorage.setItem('isFirstVisit', 'false');
-    
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        preloader.style.display = 'none';
-      }, 1000);
-    });
-  } else {
-    preloader.style.display = 'none';
-  }
-}
-
 var isDarkTheme = true;
 
 function toggleTheme() {
