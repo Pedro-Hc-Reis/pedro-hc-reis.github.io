@@ -9,6 +9,7 @@ Visite meu portfólio online: [Meu Portfólio](https://pedro-hc-reis.github.io/i
 - [Sobre Mim](#sobre-mim)
 - [Experiências](#experiências)
 - [Formações Acadêmicas](#formações-acadêmicas)
+- [Outras Formações](#outras-formações)
 - [Cursos](#cursos)
 - [Projetos](#projetos)
 - [Contato](#contato)
@@ -23,7 +24,11 @@ Aqui, detalho minhas experiências profissionais, incluindo estágios, trabalhos
 
 ## Formações Acadêmicas
 
-Nesta seção, descrevo minha formação acadêmica, incluindo detalhes sobre a universidade, o curso que frequentei e minhas realizações acadêmicas.
+Nesta seção, descrevo minhas formações acadêmicas que adquiri ao longo da minha jornada educacional.
+
+## Outras Formações
+
+Nesta seção, descrevo outras formações e qualificações relevantes que adquiri ao longo da minha jornada educacional e profissional.
 
 ## Cursos
 
