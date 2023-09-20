@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const isFirstVisit = sessionStorage.getItem('isFirstVisit') === null;
+
+  if (isFirstVisit) {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'block';
+
+    sessionStorage.setItem('isFirstVisit', 'false');
+
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+      }, 1000);
+    });
+  } else {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  }
+});
+
 var isDarkTheme = true;
 
 function toggleTheme() {
