@@ -1,20 +1,3 @@
-function preloader() {
-  const preloader = document.getElementById('preloader');
-
-  if (localStorage.getItem('isFirstVisit') === null) {
-    preloader.style.display = 'block';
-    localStorage.setItem('isFirstVisit', 'false');
-    
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        preloader.style.display = 'none';
-      }, 1000); // Aguarda 1 segundo antes de remover o preloader
-    });
-  } else {
-    preloader.style.display = 'none';
-  }
-}
-
 function myFunction() {
   var isDarkTheme = $("#body-pd").hasClass("bg-dark");
 
