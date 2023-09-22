@@ -171,3 +171,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.location.hash && window.location.hash.indexOf("#index.html#") === 0) {
+    var newHash = window.location.hash.replace("#index.html#", "#");
+    window.location.replace(newHash);
+  }
+});
