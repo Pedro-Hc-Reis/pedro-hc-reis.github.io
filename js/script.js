@@ -165,9 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verificar se o usuário está abaixo da seção de início
     if (scrollTop >= pxShow) {
-      jQuery("#go-top").css('display', 'block');
+      $('#go-top').removeClass('d-none').addClass('d-block');
     } else {
-      jQuery("#go-top").css('display', 'none');
+      $('#go-top').removeClass('d-block').addClass('d-none');
     }
   });
 })(jQuery);
