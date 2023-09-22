@@ -29,6 +29,7 @@ function toggleTheme() {
     $(".svg-p").removeClass("text-dark").addClass("text-light");
     $("#icon-theme").removeClass("bxs-moon").addClass("bxs-sun");
     $('.slider').removeClass('theme-dark').addClass('theme-light');
+    $('.responsive').removeClass('theme-dark').addClass('theme-light');
     isDarkTheme = false;
   } else {
     $("#body-pd").removeClass("bg-light").addClass("bg-dark");
@@ -37,6 +38,7 @@ function toggleTheme() {
     $(".svg-p").removeClass("text-light").addClass("text-dark");
     $("#icon-theme").removeClass("bxs-sun").addClass("bxs-moon");
     $('.slider').removeClass('theme-light').addClass('theme-dark');
+    $('.responsive').removeClass('theme-light').addClass('theme-dark');
     isDarkTheme = true;
   }
 
@@ -81,11 +83,44 @@ $(document).ready(function () {
           $(this).text('Aplicar Filtro');
       }
   });
+
+  $('.responsive').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var botaoCopiar = document.getElementById("botaoCopiar");
-  var texto = "Seu código a ser copiado aqui..."; // Substitua pelo seu código real
+  var texto = "322.322.498931484e54"; // Substitua pelo seu código real
   var iconOriginal = botaoCopiar.innerHTML;
 
   botaoCopiar.addEventListener("click", function () {
@@ -118,3 +153,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 5000);
   });
 });
+
+(function ($) {
+  var startSection = $('#inicio'); // Seção de início
+  var pxShow = startSection.offset().top; // Altura da seção de início
+  var scrollSpeed = 300; // Velocidade de rolagem para o topo
+
+  // Função para mostrar ou ocultar o botão "Voltar ao Topo"
+  jQuery(window).scroll(function () {
+    var scrollTop = jQuery(window).scrollTop();
+
+    // Verificar se o usuário está abaixo da seção de início
+    if (scrollTop >= pxShow) {
+      jQuery("#go-top").css('display', 'block');
+    } else {
+      jQuery("#go-top").css('display', 'none');
+    }
+  });
+})(jQuery);
